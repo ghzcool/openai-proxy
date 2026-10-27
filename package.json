@@ -1,5 +1,5 @@
 {
-  "name": "openai-proxy",
+  "name": "@ppirogov/openai-proxy",
   "version": "0.1.1",
   "description": "Local OpenAI-compatible proxy that forwards every request to OpenRouter (or any OpenAI-compatible provider) using proxy.config.json.",
   "type": "module",
