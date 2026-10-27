@@ -1,4 +1,4 @@
-# openai-proxy-local
+# openai-proxy
 
 A small local **OpenAI-compatible proxy**. Your apps talk to
 `http://127.0.0.1:1234/v1`; the proxy forwards every request to OpenRouter (or
@@ -19,7 +19,7 @@ The app never sees the provider URL or the provider API key.
 Run this in the folder where you want the config to live:
 
 ```bash
-npx openai-proxy-local
+npx openai-proxy
 ```
 
 > If you have not published this package yet, use the source install below, or
@@ -60,7 +60,7 @@ Answer `Y`, then open `proxy.config.json` and set `upstream.apiKey`:
 Run the command again:
 
 ```bash
-npx openai-proxy-local
+npx openai-proxy
 ```
 
 ```text
@@ -251,7 +251,7 @@ Then start the proxy from a shell where the variable is set:
 
 ```bash
 set OPENROUTER_API_KEY=sk-or-v1-...        # Windows PowerShell: $env:OPENROUTER_API_KEY="..."
-npx openai-proxy-local
+npx openai-proxy
 ```
 
 ### Protecting the local port
@@ -285,9 +285,9 @@ sent to clients.
 Examples:
 
 ```bash
-npx openai-proxy-local --port 4321
-npx openai-proxy-local --config ./configs/work.json
-npx openai-proxy-local --yes            # non-interactive config creation
+npx openai-proxy --port 4321
+npx openai-proxy --config ./configs/work.json
+npx openai-proxy --yes            # non-interactive config creation
 ```
 
 ## Using a different provider
@@ -335,7 +335,7 @@ Without linking, you can also run it directly from the package folder:
 npx --yes /absolute/path/to/openai-proxy
 ```
 
-To make the `npx openai-proxy-local` command work for everyone, publish it:
+To make the `npx openai-proxy` command work for everyone, publish it:
 
 ```bash
 npm publish
