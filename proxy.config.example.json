@@ -1,0 +1,18 @@
+{
+  "port": 1234,
+  "host": "127.0.0.1",
+  "model": null,
+  "upstream": {
+    "baseUrl": "https://openrouter.ai/api/v1",
+    "apiKey": "",
+    "apiKeyEnv": null,
+    "headers": {
+      "HTTP-Referer": "http://localhost:1234",
+      "X-Title": "openai-proxy"
+    }
+  },
+  "clientApiKey": null,
+  "requestTimeoutMs": 300000,
+  "maxBodyBytes": 52428800,
+  "log": true
+}

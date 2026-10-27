@@ -1,0 +1,37 @@
+{
+  "name": "openai-proxy-local",
+  "version": "0.1.1",
+  "description": "Local OpenAI-compatible proxy that forwards every request to OpenRouter (or any OpenAI-compatible provider) using proxy.config.json.",
+  "type": "module",
+  "bin": {
+    "openai-proxy": "bin/openai-proxy.js"
+  },
+  "exports": {
+    ".": "./src/server.js",
+    "./config": "./src/config.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE",
+    "proxy.config.example.json"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node ./bin/openai-proxy.js",
+    "test": "node --test",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "openai",
+    "proxy",
+    "openrouter",
+    "llm",
+    "local",
+    "api"
+  ],
+  "license": "MIT"
+}

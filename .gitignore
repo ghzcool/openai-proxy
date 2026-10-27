@@ -1,0 +1,5 @@
+node_modules/
+proxy.config.json
+*.log
+coverage/
+.DS_Store
