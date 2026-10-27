@@ -33,5 +33,9 @@
     "local",
     "api"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghzcool/openai-proxy"
+  }
 }
